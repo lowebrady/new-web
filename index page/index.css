@@ -1,19 +1,20 @@
-/* ========== Base Styles ========== */
+/* Reset and base styles */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #070707;
-    color: #b4b2b2;
+    background-color: #04030273;
+    color: #aeadad;
     line-height: 1.6;
 }
 
+/* Header */
 header {
-    background-color: #323233;
-    color: #ffffff;
+    background-color: #000000;
+    color: #aba9a9;
     padding: 2em 1em;
     text-align: center;
-    border-bottom: 4px solid #2b2b2c;
+    border-bottom: 4px solid #2626268c;
 }
 
 header h1 {
@@ -25,9 +26,10 @@ header h1 {
 header p {
     margin: 0.5em 0 0;
     font-size: 1.1em;
-    color: #d1d5db;
+    color: #a7a8aa;
 }
 
+/* Navigation */
 nav ul {
     list-style: none;
     padding: 0;
@@ -39,7 +41,7 @@ nav ul {
 }
 
 nav a {
-    color: #ffffff;
+    color: #a9a6a6;
     text-decoration: none;
     font-weight: 500;
     transition: opacity 0.3s ease;
@@ -49,19 +51,8 @@ nav a:hover {
     opacity: 0.8;
 }
 
-/* ========== Footer ========== */
-footer {
-    text-align: center;
-    padding: 1.5em 1em;
-    background-color: #0b0c0c;
-    font-size: 0.95em;
-    color: #b6b7b9;
-    border-top: 1px solid #e5e7eb;
-}
-
-/* ========== Homepage Hero Section ========== */
+/* Hero Section */
 .home-hero {
-    position: relative;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -69,25 +60,12 @@ footer {
     align-items: center;
     text-align: center;
     padding: 2em;
-    background-image: url('images/homepage.jpg');
+    background-image: url('homepage.jpg'); /* Replace with your actual image */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    color: rgb(10, 10, 10);
+    color: rgb(175, 172, 172);
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
-}
-
-.home-hero::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.4);
-    z-index: 0;
-}
-
-.home-hero > * {
-    position: relative;
-    z-index: 1;
 }
 
 .home-hero h2 {
@@ -100,9 +78,16 @@ footer {
     font-size: 1.15em;
     max-width: 750px;
     margin: 0.5em auto;
-    color: #a0a0a2;
+    color: #c0bdbd78;
 }
 
+.home-hero h3 {
+    margin-top: 2em;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+/* Skills List */
 .skills-list {
     list-style: none;
     padding: 0;
@@ -112,13 +97,15 @@ footer {
 .skills-list li {
     margin: 0.4em 0;
     font-size: 1.05em;
+    color: #cdc7c778;
 }
 
+/* CTA Button */
 .cta-button {
     margin-top: 2em;
     padding: 0.75em 1.5em;
-    background-color: #58595a;
-    color: white;
+    background-color: #d5d3d16e;
+    color: rgb(163, 160, 160);
     text-decoration: none;
     font-weight: 600;
     border-radius: 6px;
@@ -127,184 +114,16 @@ footer {
 }
 
 .cta-button:hover {
-    background-color: #59595b;
+    background-color: #dad7d55f;
     transform: translateY(-2px);
 }
 
-/* ========== Work Page ========== */
-.projects-section {
-    max-width: 1100px;
-    margin: 3em auto;
-    padding: 2em 1.5em;
-    animation: fadeIn 0.7s ease-in-out;
-}
-
-.projects-section h2 {
-    font-size: 2.2em;
-    font-weight: 600;
+/* Footer */
+footer {
     text-align: center;
-    margin-bottom: 2em;
-    color: #1f2937;
-    border-bottom: 2px solid #e5e7eb;
-    padding-bottom: 0.5em;
-}
-
-.project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 2em;
-}
-
-.project-card {
-    background-color: #0d0d0d;
-    border: 1px solid #e5e7eb;
-    border-radius: 12px;
-    padding: 1.75em;
-    position: relative;
-    overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-    transition: all 0.3s ease;
-    cursor: pointer;
-}
-
-.project-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
-    border-color: #cbd5e1;
-}
-
-.project-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 5px;
-    width: 100%;
-    background: linear-gradient(90deg, #010101, #6366f1);
-    transition: opacity 0.3s ease;
-    opacity: 0;
-}
-
-.project-card:hover::before {
-    opacity: 1;
-}
-
-.project-card h3 {
-    margin-top: 0;
-    font-size: 1.5em;
-    font-weight: 600;
-    color: #8e9092;
-    transition: color 0.3s ease;
-}
-
-.project-card:hover h3 {
-    color: #69696b;
-}
-
-.project-card p {
-    color: #374151;
-    font-size: 1.05em;
-    margin: 0.75em 0 0.5em;
-    line-height: 1.6;
-}
-
-.project-card ul {
-    margin-top: 0.75em;
-    padding-left: 1.2em;
-    color: #4b5563;
+    padding: 1.5em 1em;
+    background-color: #02050c;
     font-size: 0.95em;
-}
-
-.project-card ul li {
-    margin-bottom: 0.4em;
-    list-style-type: disc;
-}
-
-/* ========== About Page: Dark + Interactive ========== */
-body.about-page {
-    background-color: #0f172a;
-    color: #626364;
-}
-
-.about-section {
-    max-width: 1100px;
-    margin: 3em auto;
-    padding: 2em 1.5em;
-    animation: fadeIn 0.8s ease-in-out;
-}
-
-.about-container {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    gap: 2em;
-}
-
-.about-text {
-    max-width: 600px;
-    text-align: left;
-}
-
-.about-text h2 {
-    font-size: 2.2em;
-    color: #aeafaf;
-    margin-bottom: 0.6em;
-    position: relative;
-}
-
-.about-text h2::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    width: 60px;
-    height: 3px;
-    background: #040505;
-    transition: width 0.4s ease;
-}
-
-.about-text h2:hover::after {
-    width: 100%;
-}
-
-.about-text p {
-    color: #9d9fa0;
-    font-size: 1.05em;
-    line-height: 1.7;
-    margin-bottom: 1.2em;
-}
-
-.about-image img {
-    max-width: 300px;
-    border-radius: 12px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.about-image img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
-}
-
-@media (min-width: 768px) {
-    .about-container {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .about-text {
-        flex: 2;
-    }
-
-    .about-image {
-        flex: 1;
-        display: flex;
-        justify-content: center;
-    }
-}
-
-/* ========== Fade-In Animation ========== */
-@keyframes fadeIn {
-    0% { opacity: 0; transform: translateY(20px); }
-    100% { opacity: 1; transform: translateY(0); }
+    color: #a9aaab;
+    border-top: 1px solid #000207;
 }

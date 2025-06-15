@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Me - Brady Lowe</title>
+  <link rel="stylesheet" href="contact page/contact.css" />
+</head>
+<body class="contact-page">
+  <header>
+    <h1>Brady Lowe</h1>
+    <p>Rising Senior | Aspiring UX/UI Designer</p>
+    <nav>
+      <ul>
+        <li><a href="homepage.html">Home</a></li>
+        <li><a href="index.html">About Me</a></li>
+        <li><a href="work.html">My Work</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact-section">
+        <h2>Let's Connect</h2>
+        <p>Have a question, opportunity, or just want to say hi? Reach out below.</p>
+      
+        <form class="contact-form" action="https://formspree.io/f/xldnnwwa" method="POST">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" required>
+      
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required>
+      
+          <label for="message">Message</label>
+          <textarea name="message" id="message" rows="6" required></textarea>
+      
+          <button type="submit">Send Message</button>
+
+          <input type="hidden" name="_redirect" value="thankyou.html">
+
+        </form>
+      </section>
+      
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Brady Lowe</p>
+  </footer>
+</body>
+</html>

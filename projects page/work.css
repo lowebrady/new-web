@@ -1,0 +1,201 @@
+/* ========== Base Styles ========== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0d0c0c;
+    color: #1a1a1a;
+    line-height: 1.6;
+}
+
+/* ========== Header ========== */
+header {
+    background-color: #010202;
+    color: #0e0d0d;
+    padding: 2em 1em;
+    text-align: center;
+    border-bottom: 4px solid #b9babc;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.25em;
+    font-weight: 600;
+    color: #b0aeae;
+}
+
+header p {
+    margin: 0.5em 0 0;
+    font-size: 1.1em;
+    color: #b0aeae;
+}
+
+/* ========== Navigation ========== */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 1.5em 0 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+nav a {
+    color: #acaaaa;
+    text-decoration: none;
+    font-weight: 500;
+    transition: opacity 0.3s ease;
+}
+
+nav a:hover {
+    opacity: 0.8;
+}
+
+/* ========== Hero Section (Homepage) ========== */
+.home-hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2em;
+    background-image: url('images/homepage.jpg'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: rgb(5, 5, 5);
+    text-shadow: 1px 1px 4px rgba(172, 171, 171, 0.7);
+}
+
+.home-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 0;
+}
+
+.home-hero > * {
+    position: relative;
+    z-index: 1;
+}
+
+.home-hero h2 {
+    font-size: 2.75em;
+    margin-bottom: 0.5em;
+    font-weight: 600;
+}
+
+.home-hero p {
+    font-size: 1.15em;
+    max-width: 750px;
+    margin: 0.5em auto;
+    color: #0c0d0d;
+}
+
+.home-hero h3 {
+    margin-top: 2em;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    margin: 1em 0;
+}
+
+.skills-list li {
+    margin: 0.4em 0;
+    font-size: 1.05em;
+    color: #b0aeae;
+}
+
+/* ========== CTA Button ========== */
+.cta-button {
+    margin-top: 2em;
+    padding: 0.75em 1.5em;
+    background-color: #a6a7a8;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 12px rgba(190, 186, 186, 0.1);
+}
+
+.cta-button:hover {
+    background-color: #050505;
+    transform: translateY(-2px);
+}
+
+/* ========== Footer ========== */
+footer {
+    text-align: center;
+    padding: 1.5em 1em;
+    background-color: #060606;
+    font-size: 0.95em;
+    color: #6b7280;
+    border-top: 1px solid #090909;
+}
+
+/* ========== Work Page Styles ========== */
+.projects-section {
+    max-width: 960px;
+    margin: 3em auto;
+    padding: 2em 1.5em;
+}
+
+.projects-section h2 {
+    font-size: 2.2em;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 2em;
+    color: #b5b4b4;
+    border-bottom: 2px solid #101111;
+    padding-bottom: 0.5em;
+}
+
+.project-card {
+    background-color: #9b9898;
+    border: 1px solid #0b0b0b;
+    border-radius: 10px;
+    padding: 1.75em;
+    margin-bottom: 2em;
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 8px rgba(88, 88, 88, 0.03);
+}
+
+.project-card:hover {
+    box-shadow: 0 6px 20px rgba(155, 153, 153, 0.08);
+    transform: translateY(-4px);
+}
+
+.project-card h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #070707;
+}
+
+.project-card p {
+    margin-top: 0.5em;
+    color: #000000;
+    line-height: 1.6;
+    font-size: 1.05em;
+}
+
+.project-card ul {
+    margin-top: 1em;
+    padding-left: 1.2em;
+    color: #070707;
+    font-size: 0.95em;
+}
+
+.project-card ul li {
+    margin-bottom: 0.4em;
+    list-style-type: disc;
+}

@@ -1,0 +1,129 @@
+/* Reset and base styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #04030273;
+    color: #aeadad;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #000000;
+    color: #aba9a9;
+    padding: 2em 1em;
+    text-align: center;
+    border-bottom: 4px solid #2626268c;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.25em;
+    font-weight: 600;
+}
+
+header p {
+    margin: 0.5em 0 0;
+    font-size: 1.1em;
+    color: #a7a8aa;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 1.5em 0 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+nav a {
+    color: #a9a6a6;
+    text-decoration: none;
+    font-weight: 500;
+    transition: opacity 0.3s ease;
+}
+
+nav a:hover {
+    opacity: 0.8;
+}
+
+/* Hero Section */
+.home-hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2em;
+    background-image: url('homepage.jpg'); /* Replace with your actual image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: rgb(175, 172, 172);
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+.home-hero h2 {
+    font-size: 2.75em;
+    margin-bottom: 0.5em;
+    font-weight: 600;
+}
+
+.home-hero p {
+    font-size: 1.15em;
+    max-width: 750px;
+    margin: 0.5em auto;
+    color: #c0bdbd78;
+}
+
+.home-hero h3 {
+    margin-top: 2em;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+/* Skills List */
+.skills-list {
+    list-style: none;
+    padding: 0;
+    margin: 1em 0;
+}
+
+.skills-list li {
+    margin: 0.4em 0;
+    font-size: 1.05em;
+    color: #cdc7c778;
+}
+
+/* CTA Button */
+.cta-button {
+    margin-top: 2em;
+    padding: 0.75em 1.5em;
+    background-color: #d5d3d16e;
+    color: rgb(163, 160, 160);
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.cta-button:hover {
+    background-color: #dad7d55f;
+    transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1.5em 1em;
+    background-color: #02050c;
+    font-size: 0.95em;
+    color: #a9aaab;
+    border-top: 1px solid #000207;
+}
